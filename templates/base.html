@@ -1,0 +1,55 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <title>My Resume Page</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  </head>
+  <body class="text-center">
+    <img src="{% static 'images/zuri.jpg' %}" alt="Zuri Logo" width="300" height="150" title="Zuri Logo." />
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="{% url 'home' %}">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      
+    </div>
+  </footer>
+</div>
+<div>
+    {% block content %}
+    
+    
+    {% endblock content %}
+</div>
+</body>
+</html>
